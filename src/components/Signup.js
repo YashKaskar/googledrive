@@ -1,8 +1,15 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import { Form, Button, Card } from 'react-bootstrap'
 
 
 export default function Signup() {
+
+
+    const emailRef = useRef()
+    const passwordRef = useRef()
+    const passwordConfirmRef = useRef()
+
+
   return (
     <>
           < Card>
@@ -28,7 +35,7 @@ export default function Signup() {
                       </Form.Group>
 
                       {/* Button */}
-                      <Button className='w-100' type='submit'> Sign Up</Button>
+                      <Button className='w-100 mt-4' type='submit'> Sign Up</Button>
                   </Form>
               </Card.Body>
           </Card>
