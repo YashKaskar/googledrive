@@ -1,6 +1,11 @@
+import Signup from './Signup';
+
+
+
 const App = () => {
+
     return (    
-        'Hello'
+        < Signup />
      );
 }
  
